@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "MacOS",
+            "compilerPath": "usr/bin/clang++",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "cStandard": "c11"
+        }
+    ],
+    "version": 4,
+    "enableConfigurationSquiggles": true
+}
