@@ -1,20 +1,21 @@
 #ifndef RESEST_CLOCK_CTRL_H
 #define RESEST_CLOCK_CTRL_H
 
-#include <stdint.h>
+#include "types.h"
+#define RCC_HEX 0x40021000U
 
 typedef struct 
 {
-    volatile uint32_t CR;
-    volatile uint32_t CFGR;
-    volatile uint32_t CIR;
-    volatile uint32_t APB2RSTR;
-    volatile uint32_t APB1RSTR;
-    volatile uint32_t AHBENR;
-    volatile uint32_t APB2ENR;
-    volatile uint32_t APB1ENR;
+    vint32_t CR;
+    vint32_t CFGR;
+    vint32_t CIR;
+    vint32_t APB2RSTR;
+    vint32_t APB1RSTR;
+    vint32_t AHBENR;
+    vint32_t APB2ENR;
+    vint32_t APB1ENR;
 } RCC;
 
-#define RCC_BASE ((RCC*)(0x40021000))
+#define RCC_BASE ((RCC*)(RCC_HEX))
 
 #endif RESEST_CLOCK_CTRL_H

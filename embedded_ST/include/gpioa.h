@@ -2,19 +2,19 @@
 #define GPIOA_H
 // stm32f030f4p6
 
-#include <stdint.h>
-    
+#include "types.h"
+#define GPIOA_HEX 0x48000000U
 typedef struct 
 {
-    volatile uint32_t MODER;
-    volatile uint32_t OTYPER;
-    volatile uint32_t OSPEEDR;
-    volatile uint32_t PUPDR;
-    volatile uint32_t IDR;
-    volatile uint32_t ODR;
+    vint32_t MODER;
+    vint32_t OTYPER;
+    vint32_t OSPEEDR;
+    vint32_t PUPDR;
+    vint32_t IDR;
+    vint32_t ODR;
     volatile uint32_t BSRR;
 } GPIO;
 
-#define GPIOA_BASE ((GPIO*)(0x48000000))
+#define GPIOA_BASE ((GPIO*)(GPIOA_HEX))
 
 #endif GPIOA_H
