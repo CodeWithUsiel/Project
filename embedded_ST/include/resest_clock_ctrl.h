@@ -11,7 +11,7 @@ typedef struct
     vint32_t CIR;
     vint32_t APB2RSTR;
     vint32_t APB1RSTR;
-    vint32_t AHBENR;
+    vint32_t AHBENR; // AHB peripheral clock enable register
     vint32_t APB2ENR;
     vint32_t APB1ENR;
 } RCC;

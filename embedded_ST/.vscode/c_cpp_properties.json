@@ -4,7 +4,9 @@
             "name": "MacOS",
             "compilerPath": "usr/bin/clang++",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include/**",
+                "${workspaceFolder}/src/**"
             ],
             "cStandard": "c11"
         }

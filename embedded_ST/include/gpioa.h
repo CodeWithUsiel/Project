@@ -4,6 +4,12 @@
 
 #include "types.h"
 #define GPIOA_HEX 0x48000000U
+
+#define INPUT_MODE 0
+#define OUTPUT_MODE 1
+#define ALTERNATE_MODE 2
+#define ANALOG_MODE 3
+
 typedef struct 
 {
     vint32_t MODER;
